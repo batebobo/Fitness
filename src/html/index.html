@@ -1,3 +1,39 @@
 <html>
-    
+    <head>
+        <title>Fitness app</title>
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../js/login-controls.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="row">
+            <header class="row">
+                <h1 class="col-md-6 col-md-offset-2">Healthy lifestyle app</h1>
+            </header>
+            <nav id="main-nav" class="row">
+                <ul class="col-md-8 col-sm-8 col-sm-offset-4 col-md-offset-4 row">
+                    <li class="col-md-2 col-sm-2 col-sm-offset-4 col-md-offset-4">Home</li>
+                    <li class="col-md-2 col-sm-2">About</li>
+                    <li class="col-md-2 col-sm-2">User data</li>
+                    <li class="col-md-2 col-sm-2">Blog</li>
+                </ul>
+            </nav>
+
+            <div id="login" class="row col-md-6">
+                <div class="col-md-6 col-md-offset-2">
+                    <img src="../content/images/login.png" alt="login" id="login-icon">
+                </div>
+                <form action="index.html" method="POST" class="row col-md-10 col-md-offset-2">
+                    <fieldset class="row col-md-12" id="login-form">
+                        <legend id="login" class="col-md-8">Login</legend>
+                        <input type="text" id="username" class="col-md-8" placeholder="Username" />
+                        <input type="password" id="password" class="col-md-8" placeholder="Password">
+                        <input type="password" id="confirm" class="col-md-8" placeholder="Confirm password">
+                        <input type="submit" id="submit"  class="col-md-8" value="Login">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
