@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #CDDC39;
+}
+
+li {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*#main-navigation {
+    background-color: #FFF;
+    max-height: 128px;
+}*/
+
+nav li {
+    display: inline-block; 
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#logo {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+#logo p {
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+
+#tabs {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    border: none;
+}
+
+#tabs li a{
+    border: none;
+}
+
+#tabs li a:hover {
+    background-color:  #CDDC39;
+    color: white;
+}
+
+
+.container .jumbotron{
+    background-color:  #CDDC39;
+    color: white;
+    border-radius: 0 0 6px 6px; 
+}
+
+
+.jumbotron figure {
+    margin-top: 10px;
+}
+
+.title {
+    font-size:3em;
+    color:#f0f0f0;
+    letter-spacing:-2px;
+    margin-bottom:-2px;
+}
+
+header h1 {
+    font-family: "Calibri";
+    color: #CDDC39;
+}
+
+/*#navigation {
+    margin-top: 10px;
+    font-size: 1.5em;
+}*/
+
+#login input[type=text],
+#login input[type=password] {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+#login input[type=text]:focus,
+#login input[type=password]:focus {
+    border-color: #CDDC39;
+    outline: none;
+}
+
+footer {
+    width:100%;
+    padding:15px 0 15px;
+    background:url(../content/images/footer-tail.gif) center top repeat-x;
+}
+
+
+#footerContent {
+    text-align:center;
+}
+
+
+
