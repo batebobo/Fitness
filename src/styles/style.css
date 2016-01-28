@@ -33,22 +33,40 @@ nav li {
     font-size: 1.5em;
 }
 
-#tabs {
+#inner-tabs {
     text-decoration: none;
     list-style: none;
     text-align: center;
     border: none;
 }
 
-#tabs li a{
+#inner-tabs tabs li a{
     border: none;
 }
 
-#tabs li a:hover {
+#inner-tabs li a:hover {
     background-color:  #CDDC39;
     color: white;
 }
 
+#inner-tabs li a {
+    border: none;
+    color: white;
+    background-color: #b8c633;
+    font-size: 1.2em;
+}
+
+#inner-tabs>li.active>a{
+    color: white;
+    background-color: #CDDC39;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#inner-tabs>li.active>a:focus{
+     background-color:  #CDDC39;
+}
 
 .container .jumbotron{
     background-color:  #CDDC39;
