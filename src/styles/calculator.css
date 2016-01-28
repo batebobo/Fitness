@@ -1,0 +1,16 @@
+#calc-content{
+	border-radius: 8px;
+	border: 5px solid #a4b02d;
+	background-color: #a4b02d;
+	color: white;
+}
+
+footer {
+	float: bottom;
+	position: bottom;
+}
+
+section input {
+	border-radius: 8px;
+	border: 1px solid #a4b02d;
+}

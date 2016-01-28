@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='bg'>
+<head>
+	<title>BMI калкулатор</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/calculator.css">
+        <!--<link rel="stylesheet" href="../styles/reset.css" type="text/css" media="screen">-->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../js/login-controls.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.6.3.min.js"></script>
+
+    	<script type="text/javascript" src="../js/tabs.js"></script>
+    	<script type="text/javascript" src="../js/config.js"></script>
+    	<script type="text/javascript" src="../js/app.js"></script>
+    	<script type="text/javascript" src="../js/bmi-calculator.js"></script>
+
+</head>
+<body id="home-page">
+	<header>
+		<nav>
+	    	<div id="main-navigation"class="row">
+		    	<ul class="nav">
+		    		<li class="col-md-2"><a href="#" class="active" data-page="Home">
+		    			<span class="glyphicon glyphicon-home" area-hiiden="true"></span> Начало</a>
+		    				</li>
+		    				<li class="col-md-2"><a href="#" data-page="HealthNutrition">
+		    					<span class="glyphicon glyphicon-apple" area-hiiden="true"></span> Хранене</a>
+		    				</li>
+		    				<li class="col-md-2"><a href="#" data-page="AboutDiets">
+		    					<span class="glyphicon glyphicon-scale" area-hiiden="true"></span> Диети</a>
+		    				</li>
+		    				<li class="col-md-2"><a href="#" data-page="FitnessPrograms">
+		    					<span class="glyphicon glyphicon-fire" area-hiiden="true"></span> Спорт</a>
+		    				</li>
+		    				<li class="col-md-2"><a href="#" data-page="Blog">
+		    					<span class="glyphicon glyphicon-book" area-hiiden="true"></span> Блог</a>
+		    				</li>
+		    				<li class="col-md-2"><a id="login">
+		    					<span class="glyphicon glyphicon-user" area-hiiden="true"></span> Вход</a>
+			    				<form action="index.html" method="POST" class="form row col-md-10 col-md-offset-2">
+	                        		<fieldset class="row col-md-12" id="login-form">
+	                            		<legend id="login" class="form-group col-md-12">Login</legend>
+	                            		<input type="text" id="username" class="form-control col-md-8" placeholder="Username" />
+	                            		<input type="password" id="password" class="form-control col-md-8" placeholder="Password">
+	                            		<input type="password" id="confirm" class="form-control col-md-8" placeholder="Confirm password">
+	                            		<input type="submit" id="submit"  class="form-control col-md-8" value="Login">
+	                        		</fieldset>
+	                    		</form>
+		    		</li>
+		    	</ul>
+		    </div>
+	    </nav>
+	</header>
+	<br>
+	<section class='calc-section row'id='content'>
+		<div class='col-md-3'>
+			<form id='calculator' onsubmit:'return false'>
+				Тегло:<br>
+				<input type='text' id='weight' value='0.0'><br>
+				<br>Ръст:<br>
+				<input type='text' id='height' value='0.0'><br>
+				<br>BMI:<br>
+				<input type='text' id='bmi' disabled><br>
+				<br>
+				<input type='submit' id="calc" value='Изчисли'><br>
+			</form>			
+		</div>
+		<div class="col-md-8" id="calc-content">
+			Индексът на телесната маса (съкратено ИТМ, на английски: body mass index, BMI) e медико-биологичен показател, който служи за определяне на нормалното, здравословно тегло при хора с различен ръст и за диагностициране на затлъстяване и недохранване. Въведете тегло и ръст и калкулаторът ще пресметне индекса на телесна маса.
+		</div>
+	</section>
+	<footer>
+	        <div id="footerContent">
+	            "Разработка на Front-End Web", 2016 г.
+	            <br />
+	            &copy; Боян Вушков Мюмюн Исмаил Стела Новачкова
+	        </div>
+	    </footer>
+</body>
+</html>
