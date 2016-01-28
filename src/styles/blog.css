@@ -1,0 +1,14 @@
+span {
+    word-wrap: break-word;
+}
+
+.post {
+    border: 1px solid #CDDC39;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.post-text {
+    display: inline-block;
+    padding: 20px;
+}
