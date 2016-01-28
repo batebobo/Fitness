@@ -3,7 +3,6 @@
 $(document).ready(function(){
     $.get('../content/blog-data.json', function(response) {
         response.forEach(function(post) {
-            console.log('happening');
             var current = new BlogPost(post.title, post.thumbnail, post.content);
         });
     });
@@ -26,7 +25,7 @@ function BlogPost(title, thumbnail, content) {
         var blogContainer = $('#blog-container');
         blogContainer.append($(blogPost));
         var currentPost = blogContainer.find('article:last-of-type');
-        var thumbnail = $('<img>').attr('src', this.thumbnail);
+        var thumbnail = $('<img>').attr('src', this.thumbnail).attr('alt', 'blog-image');
         currentPost.addClass('row');
         currentPost.find('.post-title').html(this.title).addClass('col-md-12 col-sm-8 col-xs-12 text-center');
         currentPost.find('.post-text').html(this.content);
