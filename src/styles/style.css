@@ -81,7 +81,7 @@ nav li {
 .container .jumbotron{
     background-color:  #CDDC39;
     color: white;
-    border-radius: 0 0 6px 6px; 
+    border-radius: 0 0 6px 6px;
 }
 .jumbotron figure {
     margin-top: 10px;
@@ -131,8 +131,13 @@ article h1{
     margin: 10px;
 }
 
-
-
+#calc-content{
+    border-radius: 8px;
+    background-color: #cddc39;
+    padding:20px 30px;
+    color: #3d4211;
+    font-size: 1.3em;
+}
 
 footer {
     width:100%;

@@ -14,6 +14,7 @@ function BlogPost(title, thumbnail, content) {
     this.thumbnail = thumbnail;
     this.content = content;
 
+    //Trim the content if needed
     if (this.content.length > 1000) {
         this.rest = this.content.substring(1000, this.content.length);
         this.content = this.content.substring(0, 1001);
@@ -30,6 +31,7 @@ function BlogPost(title, thumbnail, content) {
         currentPost.find('.post-text').html(this.content);
         thumbnail.addClass('post-thumbnail img-responsive col-md-4 col-sm-8 col-xs-12').css('float', 'right');
 
+        //Enable expanding and collapsing content
         this.showMoreLink = function() {
             var showMore = $('<a> прочети още</a>').addClass('show-more').appendTo(currentPost.find('.post-text'));
             showMore.click(function() {
@@ -51,6 +53,7 @@ function BlogPost(title, thumbnail, content) {
         currentPost.find('.post-text').prepend(thumbnail).addClass('col-md-12 col-sm-12 col-xs-12');
     }
 
+    //Blog post setup
     $.get('../html/blog-post.html', function(response){
        self.loadControl(response);
        var oddPosts = $('.post').filter(':odd');
