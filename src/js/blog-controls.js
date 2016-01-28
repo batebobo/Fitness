@@ -3,6 +3,7 @@
 $(document).ready(function(){
     $.get('../content/blog-data.json', function(response) {
         response.forEach(function(post) {
+            console.log('happening');
             var current = new BlogPost(post.title, post.thumbnail, post.content);
         });
     });
