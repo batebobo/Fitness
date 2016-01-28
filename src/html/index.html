@@ -18,8 +18,8 @@
     	<div class="container">
 	    	<header>
 	    		<nav>
-	    			<div class="row">
-		    			<ul>
+	    			<div id="main-navigation"class="row">
+		    			<ul class="nav">
 		    				<li class="col-md-2"><a href="#" class="active" data-page="Home">
 		    					<span class="glyphicon glyphicon-home" area-hiiden="true"></span> Начало</a>
 		    				</li>
@@ -35,8 +35,8 @@
 		    				<li class="col-md-2"><a href="#" data-page="Blog">
 		    					<span class="glyphicon glyphicon-book" area-hiiden="true"></span> Блог</a>
 		    				</li>
-		    				<li class="col-md-2"><a href="#">
-		    						<span class="glyphicon glyphicon-user" id="login" area-hiiden="true"></span> Вход</a>
+		    				<li class="col-md-2"><a id="login">
+		    					<span class="glyphicon glyphicon-user" area-hiiden="true"></span> Вход</a>
 			    				<form action="index.html" method="POST" class="form row col-md-10 col-md-offset-2">
 	                        		<fieldset class="row col-md-12" id="login-form">
 	                            		<legend id="login" class="form-group col-md-12">Login</legend>
@@ -101,8 +101,13 @@
                     <figure class="col-md-8 img-responsive"><img src="../content/images/page1-img3.jpg" alt="" class="img-responsive"></figure>
 	            </div>
             </div>
-            
-	 	   	
+     <!--===========================Content==================================-->
+            <section>
+            	<div class="row">
+            		<article id="selectedContent" class="col-md-12">
+            			
+            		</article>
+            </section>
     	</div>
     	<footer>
 	        <div id="footerContent">

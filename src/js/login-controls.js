@@ -1,6 +1,6 @@
 window.onload = function() {
     var loginForm = $('#login-form');
-    var loginIcon = $('#login-icon');
+    var loginIcon = $('#login');
 
     loginForm.fadeTo(0, 0.0);
     loginForm.css('position', 'absolute');
