@@ -1,7 +1,5 @@
 ﻿"use strict";
 
-var constSearchText = "Търсене (В процес на разработка)";
-
 $(document).ready(function () {
 
     $("[data-page]").attr("href", "#selectedContent");
@@ -20,20 +18,16 @@ $(document).ready(function () {
         });
     });
 
-    $("#tbSearch").val(constSearchText);
-    $("#tbSearch").attr("title", constSearchText);
+    $('.super-food-container').hide();
+    $('.super-food').click(function() {
+        $('.super-food a').removeClass('active');
+        $(this).addClass('active');
+        $('.super-food-container').hide();
 
-    $("#tbSearch").blur(function () {
-        if ($(this).val() == '') {
-            $(this).val(constSearchText);
-        } 
+        var activeFood = $(this).find('a').attr("href");
+        $(activeFood).show();
     });
-
-    $("#tbSearch").focus(function () {
-        if ($(this).val() == constSearchText) {
-            $(this).val('');
-        } 
-    });
+    
 });
 
 function InitHomePage()

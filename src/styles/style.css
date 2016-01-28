@@ -4,6 +4,10 @@ body {
     color: #666e1c;
     background-color: #f8fded;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+p {
+    font-size: 16px;
 }
 li {
     text-decoration: none;
@@ -94,12 +98,6 @@ header h1 {
     font-family: "Calibri";
     color: #CDDC39;
 }
-
-/*#navigation {
-    margin-top: 10px;
-    font-size: 1.5em;
-}*/
-
 #login input[type=text],
 #login input[type=password] {
     padding: 5px;
@@ -114,13 +112,33 @@ header h1 {
     outline: none;
 }
 
+article h1{
+    color: #b8c633;
+}
+.super-food .caption {
+    text-align: center;
+    text-transform: uppercase;
+    color:  #3d4211;
+}
+
+#super-foods-article {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+#healthy-diet-img{
+    margin: 10px;
+}
+
+
+
+
 footer {
     width:100%;
     padding:15px 0 15px;
     background:url(../content/images/footer-tail.gif) center top repeat-x;
 }
-
-
 #footerContent {
     text-align:center;
 }
