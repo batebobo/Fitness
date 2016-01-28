@@ -26,24 +26,24 @@
 		    				<li class="col-md-2"><a href="#" data-page="HealthNutrition">
 		    					<span class="glyphicon glyphicon-apple" area-hiiden="true"></span> Хранене</a>
 		    				</li>
-		    				<li class="col-md-2"><a href="#" data-page="AboutDiets">
-		    					<span class="glyphicon glyphicon-scale" area-hiiden="true"></span> Диети</a>
-		    				</li>
 		    				<li class="col-md-2"><a href="#" data-page="FitnessPrograms">
 		    					<span class="glyphicon glyphicon-fire" area-hiiden="true"></span> Спорт</a>
+		    				</li>
+		    				<li class="col-md-2"><a href="#" data-page="Calculator">
+		    					<span class="glyphicon glyphicon-scale" area-hiiden="true"></span> Калкулатор</a>
 		    				</li>
 		    				<li class="col-md-2"><a href="#" data-page="Blog">
 		    					<span class="glyphicon glyphicon-book" area-hiiden="true"></span> Блог</a>
 		    				</li>
 		    				<li class="col-md-2"><a id="login">
 		    					<span class="glyphicon glyphicon-user" area-hiiden="true"></span> Вход</a>
-			    				<form action="index.html" method="POST" class="form row col-md-10 col-md-offset-2">
-	                        		<fieldset class="row col-md-12" id="login-form">
-	                            		<legend id="login" class="form-group col-md-12">Login</legend>
-	                            		<input type="text" id="username" class="form-control col-md-8" placeholder="Username" />
-	                            		<input type="password" id="password" class="form-control col-md-8" placeholder="Password">
-	                            		<input type="password" id="confirm" class="form-control col-md-8" placeholder="Confirm password">
-	                            		<input type="submit" id="submit"  class="form-control col-md-8" value="Login">
+			    				<form action="index.html" method="POST" class="form row">
+	                        		<fieldset class="col-md-12" id="login-form">
+	                            		<legend id="login" class="form-group col-md-12"></legend>
+	                            		<input type="text" id="username" class="form-control" placeholder="Име" />
+	                            		<input type="password" id="password" class="form-control" placeholder="Парола">
+	                            		<input type="password" id="confirm" class="form-control" placeholder="Повторете паролата">
+	                            		<input type="submit" id="submit"  class="form-control" value="Влезте">
 	                        		</fieldset>
 	                    		</form>
 		    				</li>
@@ -85,7 +85,7 @@
                         <p>
                             Фитнес програми
                         </p>
-                        <a href="#" data-page="TrainingProgams" class="btn btn-default"><strong>Прочети още</strong></a>
+                        <a href="#" data-page="FitnessPrograms" class="btn btn-default"><strong>Прочети още</strong></a>
                     </div>
                     <figure class="col-md-8 img-responsive"><img src="../content/images/page1-img2.jpg" alt="" class="img-responsive"></figure>
 	            </div> 
@@ -96,7 +96,7 @@
                             Програми за намяляване<br>
                             на тегло
                         </p>
-                        <a href="#" data-page="WeightLossEx" class="btn btn-default"><strong>Прочети още</strong></a>
+                        <a href="#" data-page="HealthNutrition" class="btn btn-default"><strong>Прочети още</strong></a>
                     </div>
                     <figure class="col-md-8 img-responsive"><img src="../content/images/page1-img3.jpg" alt="" class="img-responsive"></figure>
 	            </div>
@@ -104,9 +104,10 @@
      <!--===========================Content==================================-->
             <section>
             	<div class="row">
-            		<article id="selectedContent" class="col-md-12">
-            			
-            		</article>
+            		<div id="selectedContent" class="col-md-12">
+            		
+            		</div>		
+            	</div>
             </section>
     	</div>
     	<footer>

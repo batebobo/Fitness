@@ -14,30 +14,46 @@ function BlogPost(title, thumbnail, content) {
     this.thumbnail = thumbnail;
     this.content = content;
 
-    self.loadControl = function(data) {
+    if (this.content.length > 1000) {
+        this.rest = this.content.substring(1000, this.content.length);
+        this.content = this.content.substring(0, 1001);
+        this.showMore = true;
+    }
+
+    self.loadControl = function(blogPost) {
         var blogContainer = $('#blog-container');
-        blogContainer.append($(data));
+        blogContainer.append($(blogPost));
         var currentPost = blogContainer.find('article:last-of-type');
-        var thumbnail = $('<img>');
-        thumbnail.attr('src', this.thumbnail);
+        var thumbnail = $('<img>').attr('src', this.thumbnail);
         currentPost.addClass('row');
-        //Set title
         currentPost.find('.post-title').html(this.title).addClass('col-md-12 col-sm-8 col-xs-12 text-center');
-        //Set thumbnail
-        //currentPost.find('.post-thumbnail').attr('src', this.thumbnail).addClass('img-responsive col-md-4 col-sm-8 col-xs-12');
-        //Set content
-        currentPost.find('.post-text').html(this.content).addClass('col-md-12 col-sm-12 col-xs-12');
-        currentPost.find('.post-text').prepend(thumbnail);
-        thumbnail.css('float', 'right');
-        thumbnail.addClass('post-thumbnail img-responsive col-md-4 col-sm-8 col-xs-12');
+        currentPost.find('.post-text').html(this.content);
+        thumbnail.addClass('post-thumbnail img-responsive col-md-4 col-sm-8 col-xs-12').css('float', 'right');
+
+        this.showMoreLink = function() {
+            var showMore = $('<a> прочети още</a>').addClass('show-more').appendTo(currentPost.find('.post-text'));
+            showMore.click(function() {
+               currentPost.find('.post-text').html(self.content.concat(self.rest)).prepend(thumbnail);
+               self.showLessLink();
+            });
+        }
+
+        this.showLessLink = function() {
+            var showLess = $('<a> скрий</a>').addClass('show-less').appendTo(currentPost.find('.post-text'));
+            showLess.click(function() {
+                currentPost.find('.post-text').html(self.content).prepend(thumbnail);
+                self.showMoreLink();
+            });
+        }
+        if (this.showMore) {
+           this.showMoreLink();
+        }
+        currentPost.find('.post-text').prepend(thumbnail).addClass('col-md-12 col-sm-12 col-xs-12');
     }
 
     $.get('../html/blog-post.html', function(response){
        self.loadControl(response);
        var oddPosts = $('.post').filter(':odd');
-       var evenPosts = $('.post').filter(':even');
-       evenPosts.find('.post-thumbnail').addClass();
        oddPosts.find('.post-thumbnail').css('float', 'left');
-
     });
 }
