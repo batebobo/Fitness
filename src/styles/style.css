@@ -1,62 +1,84 @@
 body {
     margin: 0;
     padding: 0;
-    color: #CDDC39;
+    color: #666e1c;
+    background-color: #f8fded;
+    font-family:Arial, Helvetica, sans-serif;
 }
-
 li {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
 }
-
-/*#main-navigation {
-    background-color: #FFF;
-    max-height: 128px;
-}*/
-
+#main-navigation li a{
+    background-color: #a4b02d;
+    height: 70px;
+    padding-top: 20px;
+    border-left:1px solid #e5e5e5;
+    border-radius: 4px;
+    color: #fbfff5;
+}
+#main-navigation li a:hover {
+    background-color: #CDDC39;
+}
+#main-navigation li a.active, #main-navigation li a.active:focus {
+    background-color: #CDDC39;
+}
+#main-navigation ul:last-child a:hover {
+    cursor: pointer;
+}
 nav li {
-    display: inline-block; 
     margin-top: 10px;
     font-size: 1.5em;
     text-align: center;
 }
-
 #logo {
     padding-bottom: 25px;
     padding-top: 10px;
 }
+#logo h1 a {
+    font-size: 1.2em;
+    color: #666e1c;
+}
 #logo p {
-    margin-top: 5%;
+    margin-top: 6%;
     font-size: 1.5em;
 }
-
-#tabs {
+#inner-tabs {
     text-decoration: none;
     list-style: none;
     text-align: center;
     border: none;
 }
-
-#tabs li a{
+#inner-tabs li a{
     border: none;
 }
-
-#tabs li a:hover {
-    background-color:  #CDDC39;
+#inner-tabs li a:hover {
+    background-color: #CDDC39;
     color: white;
 }
-
-
+#inner-tabs li a {
+    border: none;
+    color: white;
+    background-color: #b8c633;
+    font-size: 1.2em;
+}
+#inner-tabs>li.active>a{
+    color: white;
+    background-color: #CDDC39;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#inner-tabs>li.active>a:focus{
+     background-color:  #CDDC39;
+}
 .container .jumbotron{
     background-color:  #CDDC39;
     color: white;
     border-radius: 0 0 6px 6px; 
 }
-
-
 .jumbotron figure {
     margin-top: 10px;
 }
