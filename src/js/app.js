@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $("[data-page]").attr("href", "#selectedContent");
 
-    InitHomePage();    
+    InitHomePage();
 
     $("[data-page]").click(function (e) {
         //e.preventDefault();
@@ -15,24 +15,23 @@ $(document).ready(function () {
 
         $.get(page, function (content) {
             $("#selectedContent").html(content);
-        });
-    });
-
-    $('.super-food-container').hide();
-    $('.super-food').click(function() {
-        $('.super-food a').removeClass('active');
-        $(this).addClass('active');
-        $('.super-food-container').hide();
+            $('.super-food-container').hide();
+            $('.super-food').click(function() {
+            $('.super-food a').removeClass('active');
+            $(this).addClass('active');
+            $('.super-food-container').hide();
 
         var activeFood = $(this).find('a').attr("href");
         $(activeFood).show();
     });
-    
+        });
+    });
+
 });
 
 function InitHomePage()
 {
-    $.get("Home.html", function (content) {        
+    $.get("Home.html", function (content) {
         $("#selectedContent").html(content);
     });
 }
